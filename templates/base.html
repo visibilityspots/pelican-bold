@@ -23,7 +23,6 @@
         <div class="site clearfix">
             {% include 'nav.html' %}
             <section class="content">
-                <h1 class="stamp">{% block section_title %}{% endblock %}</h1>
                 {% if category and CATEGORY_FEED_ATOM %}
                     <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category) }}" class="feed"><img src="/theme/images/icons/rss.png"/></a>
                 {% elif tag and TAG_FEED_ATOM %}
